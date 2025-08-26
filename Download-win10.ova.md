@@ -1,4 +1,4 @@
-# Download documentation
+# Download-win10.ova
 
 **Since the image file exceeds GitHub’s upload size limit, it cannot be provided directly within this repository. If you plan to use VirtualBox, please follow the steps below to download and extract the compressed archive in order to obtain the image:**
 
