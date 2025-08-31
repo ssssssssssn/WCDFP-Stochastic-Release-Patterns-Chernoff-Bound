@@ -5,4 +5,13 @@ As the image file exceeds GitHub’s upload size limit, we are unable to provide
 
 
 
+### 9.1
 
+Since GitHub automatically removes empty folders, we have added back the previously missing ones:
+
+- `StochasticReleasePatterns_GenerationVersion/results/result1/res/`
+- `StochasticReleasePatterns_GenerationVersion/results/result1/time/`
+- `StochasticReleasePatterns_GenerationVersion/tasksets/taskset1/`
+- `StochasticReleasePatterns_VSCodeVersion/results/result1/res/`
+- `StochasticReleasePatterns_VSCodeVersion/results/result1/time/`
+- `StochasticReleasePatterns_VSCodeVersion/tasksets/taskset1/`
