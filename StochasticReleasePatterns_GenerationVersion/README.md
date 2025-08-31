@@ -6,18 +6,36 @@ This repository is used to reproduce the evaluation from paper:
 
 for RTSS 2025 submission. This document is explaining how to use the artifact to repeat the experiments presented in the paper, i.e., Fig. 2(a)-(h) in Section V. 
 
-**If you are using VSCode (we will provide instructions on how to install and use it), please download the code().
-If you are using other Python IDEs, such as PyCharm, please download the code() instead.**
-
 The rest of the document is organized as follows:
-1. [Environmental dependence](#environmental-dependence)
-2. [Directory structure](#directory-structure)
-3. [How to run the experiments](#how-to-run-the-experiments)
-4. [Experimental procedures](#experimental-procedures)
 
-## Environmental dependence
+1. [Code download and environmental set up](#Code-download-and-environmental-set-up)
+2. [Directory structure](#directory-structure)
+3. [The random task sets and results for all the Figs in the paper](#The-random-task-sets-and-results-for-all-the-Figs-in-the-paper)
+4. [How to run the random experiments](#how-to-run-the-random-experiments)
+5. [Our paper](#our-paper)
+
+## Code download and Environmental set up
 
 Experiments are executed on a desktop computer with Windows 10 OS, equipped with an Intel(R) Core(TM) i7-10700 processor and 8GB of RAM.
+
+
+### Code download
+
+**If you use VirtualBox,Please find the link([Image download link](https://github.com/ssssssssssn/WCDFP-Stochastic-Release-Patterns-Chernoff-Bound)) and download the image file with the `.ova` extension. There is no need to download (StochasticReleasePatterns_VSCodeVersion and StochasticReleasePatterns_GenerationVersion).Please use vscode to run our code.Our code and vscode are both provided on the deskop**
+
+*We have already set up the environment in the virtual machine, please note that we are not conducting the experiments with the virtual machine; instead, we are doing the experiments on our physical computer.*
+
+
+
+**If you are using VSCode (we will provide instructions on how to install and use it), please download the code([StochasticReleasePatterns_VSCodeVersion](https://github.com/ssssssssssn/WCDFP-Stochastic-Release-Patterns-Chernoff-Bound/tree/main/StochasticReleasePatterns_VSCodeVersion)).**
+
+**If you are using other Python IDEs, such as PyCharm, please download the code([StochasticReleasePatterns_GenerationVersion](https://github.com/ssssssssssn/WCDFP-Stochastic-Release-Patterns-Chernoff-Bound/tree/main/StochasticReleasePatterns_GenerationVersion)) instead.**
+
+
+### Environmental set up
+
+***This section is intended for those who are not using the provided virtual machine.***
+
 
 We use Python 3.8 in our experiments. If you are familiar with Python, you may configure the environment on your own and make sure to install the required packages.
 
@@ -25,13 +43,15 @@ We use Python 3.8 in our experiments. If you are familiar with Python, you may c
 
 Otherwise, we provide step-by-step instructions on how to deploy Python 3.8 and install the required libraries on a Windows system.
 
-For more details, please refer to [EnvironmentalDependence](EnvironmentalDependence.md).
+For more details, please refer to [EnvironmentalDependence](https://github.com/ssssssssssn/WCDFP-Stochastic-Release-Patterns-Chernoff-Bound/blob/main/StochasticReleasePatterns_VSCodeVersion/EnvironmentalDependence.md).
 
 
 
 ## Directory structure
+
 The following shows all the file directories, where for each function in every file, we have provided detailed annotations of its parameters and key procedures.
     
+
     .
     ├── algorithms                  # algorithms
     │   ├── cher_n_o.py             # Theorem 3 in our paper
@@ -71,7 +91,6 @@ For example, the file
 
 ## How to run the random experiments
 
-
 We will present the experimental reproduction of Fig. 2(a)–(h). 
 To facilitate this, we provide ready-to-use code files that can be executed directly, without the need to write additional testing code.
 In total, we provide four testing scripts:
@@ -94,7 +113,7 @@ Running python file: `./experiments/drawPic.py` allows you to reproduce the plot
 The resulting plots are saved in: `./plot/outputs\`. The correspondence between the output figures and those in the paper is as follows::
 
 | Paper Figure | Output Figure |
-|--------------|---------------|
+| ------------ | ------------- |
 | Fig. 2(a)    | CV-D-Time.svg |
 | Fig. 2(b)    | CV-L-Time.svg |
 | Fig. 2(c)    | CV-D-N.svg    |
