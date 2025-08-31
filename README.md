@@ -5,7 +5,7 @@ As the image file exceeds GitHub’s upload size limit, we are unable to provide
 
 
 
-### 9.1 update：
+### 9.1 update:
 
 Since GitHub automatically removes empty folders, we have added back the previously missing ones:
 
